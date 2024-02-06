@@ -1,0 +1,252 @@
+.body {
+    background-image: url('/assets/images/Map_back.png');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    backdrop-filter: blur(7px);
+    background-attachment: fixed;
+}
+
+p {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main {
+    background-image: url('/assets/video/Aboutus.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    margin-top: 0%;
+    color: white;
+}
+
+.p {
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70PX;
+    font-weight: 900;
+    animation: horizontal 15s infinite;
+    /* animation-delay: 1s; */
+}
+
+@keyframes horizontal {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+a {
+    color: white;
+}
+
+@media(max-width:414px) {
+    .p {
+        font-size: 30px;
+        margin-top: 25%;
+        animation: horizontal 10s infinite;
+    }
+
+    .main {
+        margin-top: 5%;
+    }
+
+    h6 {
+        color: #0a5b99;
+    }
+
+    a {
+        color: #0a5b99;
+    }
+
+    p {
+        padding: 2%;
+    }
+}
+
+
+.div {
+    padding: 10%;
+    padding-top: 5%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body p {
+
+    justify-content: center;
+}
+
+.card {
+    margin-top: -25%;
+    z-index: 2;
+    border: none;
+}
+
+@media(max-width:400px) {
+    .card {
+        margin-top: 0%;
+    }
+}
+
+.iconimg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.image {
+    width: 100%;
+    height: 40rem;
+
+}
+
+@media(max-width:400px) {
+    .image {
+        height: auto;
+    }
+}
+
+
+h1,
+h2 {
+    color: #fd8c29;
+
+}
+
+h3, h2{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes moves {
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(720deg);
+
+    }
+}
+
+
+/* animation iconsss */
+
+.wa {
+    text-align: center;
+    color: #ef3f39;
+    animation: wave 6s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translatex(-50px);
+    }
+
+    50% {
+        transform: scale(2.1);
+    }
+
+    70% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translatex(60px);
+    }
+}
+
+.w {
+    text-align: center;
+    color: #ef3f39;
+    animation: motion 1s infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: skewx(20deg);
+        width: 10%
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: skewy(20deg);
+        width: 20%;
+    }
+
+    20% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes motion {
+    0% {
+        transform: translatey(100px);
+    }
+
+    50% {
+        left: 2%;
+    }
+
+    100% {
+        transform: translate(300px);
+    }
+}
+
+@keyframes triangle {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    70% {
+        transform: scale(2.2);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes circles {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
+.btn {
+    color: white;
+    background-color: #fd8c29;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    transform: scale(1.5);
+}

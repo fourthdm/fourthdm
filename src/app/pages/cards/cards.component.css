@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 10px;
+    padding: 2%;
+    color: black;
+}
+
+.card-title {
+    text-align: center;
+    color: #0a789c;
+}
+
+.card-subtitle {
+    text-align: center;
+    color: #fd8c29;
+}
+
+a {
+    color: #fd8c29;
+    font-size: small;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*50deg)) translateZ(380px);
+}
+
+.slider span .dic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    object-fit: cover;
+    transition: 2s;
+}
+
+/* .slider span .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+} */
+
+.slider span:hover .card {
+    transform: scale(1.1);
+}
+
+
+.card-img-top {
+    width: 50%;
+    height: 50%;
+    translate: 50px 50px;
+}
+
+.card-img-top {
+    
+}
+
+.card-body {
+    padding: 2%;
+}
+
+.div {
+    position: fixed;
+}
+
+.images {
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+}

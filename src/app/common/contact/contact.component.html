@@ -1,0 +1,84 @@
+<div class="body">
+    <div class="main">
+        <div class="div">
+            <p class="p">CONTACT US</p>
+            <br>
+            <h6><a [routerLink]="['/home']"><i class="fa fa-house fa-sm"></i>Home</a><p class="para">Back to Home</p> . Contact</h6>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+   
+        <h1 style="text-align: center;">Get In Touch</h1>
+        <p style="text-align: center;">We are as eager to work on an exciting project as you are to partner with a great
+            company. surely, a good reason to get in touch.</p> 
+
+        <br><br>
+        <img src="/assets/images/Getintouch.jpg" alt="">
+    
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Contact Information</h1> <br>
+                <h5><i class="fa-solid fa-phone-volume"></i> Phone</h5>
+                02026608663 <br>
+                +91 7709892292
+                <br> <br>
+                <h5><i class="fa-solid fa-envelope"></i> Send Email</h5>
+                info@fourthdm.com <br>
+                vikas.t@fourthdm.com
+                <br> <br>
+                <h5><i class="fa fa-location-dot"></i> Office</h5>
+                Gera's Imperium Alpha,Grant Road, Kharadi, Pune, Maharashtra 411014.
+    
+                <br><br>
+            </div>
+            <br>
+
+
+            <div class="col-md-6">
+                <h1>Contact us</h1> <br>
+                <form [formGroup]="contactform"  (ngSubmit)="onsubmit(contactform.value)" class="row g-3 needs-validation" novalidate>
+                
+                    <div class="col-md-10">
+                         <input type="text"  name="Name" class="form-control" id="Name" formControlName="Name" value=""
+                            placeholder="Enter Your Name " required>
+                        <div class="valid-feedback">
+                            Your Name
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                
+                        <input type="email" name="EmailAddress" formControlName="EmailAddress" class="form-control" id="EmailAddress"
+                            placeholder="Enter Your Email Address.." required>
+    
+                    </div>
+                    <div class="col-md-10">
+    
+                        <input type="number" name="MobileNo"  formControlName="MobileNo" class="form-control" id="MobileNo" value=""
+                            placeholder="Enter your Mobile number" required>
+                        <div class="valid-feedback">
+                            Your number
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-10   ">
+    
+                        <textarea type="text"  name="Message" formControlName="Message" class="form-control" id="Message" placeholder="Message" required></textarea>
+    
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn" style="background-color:orange;color: white;" type="submit">
+                            Submit</button> <br> <br>
+                    </div>
+                    <br><br>
+                </form>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

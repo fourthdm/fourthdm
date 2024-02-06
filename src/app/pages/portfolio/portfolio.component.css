@@ -1,0 +1,65 @@
+.body{
+    background-image: url('/assets/images/Map_back.png'); 
+    background-repeat: no-repeat;
+    background-size:150%;
+    backdrop-filter: blur(7px);
+    background-attachment: fixed;
+  } 
+
+.main{
+    background-image: url('/assets/video/Back2.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    color: white;
+    margin-top: 0%;
+}
+
+@media(max-width:400px){
+    .main{
+        margin-top: 8%;
+    }
+}
+
+.div{
+    padding: 10%;
+    padding-top: 5%;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+p{
+margin-top: 10%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 70PX;
+ font-weight: 900;
+ animation:horizontal 15s  infinite ;
+ /* animation-delay: 1s; */
+}
+
+@keyframes horizontal{
+    from{
+        transform:translateX(-200px);
+    }
+    to{
+        transform: translateX(50px);
+    }
+}
+a{
+    color: white;
+}
+
+@media(max-width:400px){
+    p{
+        font-size: 30px;
+        margin-top: 25%;
+        animation: horizontal 15s infinite;
+    }
+    h6{
+        color: #0a5b99;
+    }
+    a{
+        color: #0a5b99;
+    }
+}

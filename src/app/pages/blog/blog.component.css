@@ -1,0 +1,152 @@
+.body{
+    background-image: url('/assets/images/Map_back.png'); 
+    background-repeat: no-repeat;
+    background-size:150%;
+    backdrop-filter: blur(7px);
+    background-attachment: fixed;
+  } 
+
+
+.main{
+    background-image: url('/assets/video/Blog.gif');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    margin-top: 1%;
+}
+
+.p {
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70PX;
+    font-weight: 900;
+    animation: horizontal 15s infinite;
+    /* animation-delay: 1s; */
+}
+
+@media(max-width:414px){
+    .main{
+        margin-top: 17%;
+    }
+}
+
+@keyframes horizontal {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+a{
+    color: white;
+}
+@media(max-width:414px) {
+    .p {
+        font-size: 30px;
+        margin-top: 5%;
+        animation: horizontal 10s infinite;
+    }
+   
+}
+.div{
+    padding: 10%;
+    padding-top: 5%;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.i{
+    text-align: center;
+    animation: triangle 1s infinite;
+}
+
+.m{
+    text-align: center;
+    color: #56b947,#ffd533,#0a6481;
+    animation: motion 1s infinite;
+}
+
+.w{
+    text-align: center;
+    color: #ef3f39;
+}
+
+
+
+@keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+}
+
+@keyframes waves{
+    0%{
+        transform: skewx(20deg);
+        width: 10%
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: scale(0.6);
+    }
+}
+
+@keyframes star{
+    0%{
+        transform: skewy(20deg);
+        width: 20%;
+    }
+    20%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes motion{
+    0%{
+        transform: translatey(100px);
+    }
+    50%{
+        left: 2%;
+    }
+    100%{
+        transform: translate(300px);
+    }
+}
+
+@keyframes triangle{
+    50%{
+        transform: rotate(360deg);
+    }
+    70%{
+        transform: scale(2.2);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes circles{
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+
+

@@ -1,0 +1,302 @@
+.body {
+    background-image: url('/assets/images/Map_back.png');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    backdrop-filter: blur(7px);
+    background-attachment: fixed;
+}
+
+.main {
+    background-image: url('/assets/video/service.gif');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    margin-top: 0%;
+}
+
+p,
+b {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.p {
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70PX;
+    font-weight: 900;
+    animation: horizontal 15s infinite;
+}
+
+@keyframes horizontal {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+a {
+    color: white;
+}
+
+@media(max-width:439px) {
+    .main {
+        margin-top: 5%;
+    }
+
+    .p {
+        font-size: 30px;
+        margin-top: 25%;
+        animation: horizontal 15s infinite;
+    }
+
+    h6 {
+        color: #0a5b99;
+    }
+
+    a {
+        color: #0a5b99;
+    }
+
+    .serviceimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        /* padding-inline-start: 4rem; */
+    }
+
+    p {
+        padding: 1%;
+    }
+
+}
+
+.div {
+    padding: 10%;
+    padding-top: 5%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+}
+
+.fa-square-check {
+    color: #0a6481;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #055496;
+    font-weight: 700;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2 {
+    /* text-shadow: 2px 2px 4px; */
+    color: #055596bc;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2:hover {
+    text-decoration: underline #fd8c49;
+    transform: scale(1.1);
+}
+
+img {
+    height: 90%;
+    width: 80%;
+    /* animation: flip 4s 1; */
+}
+
+.serviceimg{
+    height: 90%;
+    width: 80%;
+}
+
+@keyframes flip {
+    0% {
+        left: 5%;
+    }
+
+    20% {
+        transform: skew(5deg);
+    }
+
+    50% {
+        transform: skewY(1deg);
+    }
+
+    70% {
+        right: -8%;
+    }
+
+    100% {
+        transform: translatey(-20px);
+    }
+}
+
+
+/* animation for icons on fullpage */
+.wa {
+    text-align: center;
+    color: #ef3f39;
+    animation: waves 6s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes waves {
+    0% {
+        transform: skewx(20deg);
+        width: 10%
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: skewy(20deg);
+        width: 20%;
+    }
+
+    20% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes motion {
+    0% {
+        transform: translatey(100px);
+    }
+
+    50% {
+        left: 2%;
+    }
+
+    100% {
+        transform: translate(300px);
+    }
+}
+
+@keyframes triangle {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    70% {
+        transform: scale(2.2);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
+
+@keyframes circles {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
+.m {
+    z-index: 2;
+    color: #ffd533;
+    /* ##56b947,#0a6481; */
+    animation: motion 8s infinite;
+}
+
+.m2 {
+    z-index: 2;
+    color: #56b947;
+    text-align: end;
+    margin-left: 30%;
+    /* ,#0a6481; */
+    animation: motion 8s infinite;
+}
+
+.m3 {
+    z-index: 2;
+    color: #0a6481;
+    text-align: end;
+    animation: down 8s infinite;
+}
+
+@keyframes motion {
+    0% {
+        transform: translatey(100px);
+    }
+
+    50% {}
+
+    100% {
+        transform: translate(300px);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translatey(-100px);
+    }
+
+    50% {
+        left: 2%;
+    }
+
+    100% {
+        transform: translate(300px);
+    }
+}
