@@ -9,7 +9,7 @@
     user-select: none;
 }
 
-.main:hover{
+.main:hover {
     cursor: pointer;
 }
 
@@ -47,6 +47,7 @@
 .fa-instagram:hover {
     /* background:-webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); */
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
@@ -99,7 +100,14 @@ a {
     user-select: none;
 }
 
-@media(max-width:414px) {
+
+.letss {
+    text-align: center;
+    text-shadow: 1px 4px 6px #055496;
+    padding-left: 7%;
+}
+
+@media(max-width:439px) {
     .callus {
         margin-inline-start: 0;
     }
@@ -113,11 +121,26 @@ a {
         margin-left: -10%;
     }
 
+    .letss {
+        text-align: center;
+    }
+
+    .copyrights {
+        display: block;
+    }
 }
 
 @media(max-width:768px) {
     .callus {
         margin-inline-start: 0;
+    }
+
+    .letss {
+        text-align: center;
+    }
+
+    .powered {
+        padding-inline-start: 0%;
     }
 }
 
@@ -142,13 +165,15 @@ a {
 
 @media(max-width:1024px) {
     .powered {
-        padding-inline-start: 32%;
+        padding-inline-start: 10%;
     }
 }
 
-@media(max-width:414px) {
+@media(max-width:439px) {
     .copyrights {
         font-size: small;
+        display: block;
+        text-align: center;
     }
 
     .powered {

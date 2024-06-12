@@ -1,7 +1,7 @@
 .body {
     background-image: url('/assets/images/Map_back.png');
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
     backdrop-filter: blur(7px);
     background-attachment: fixed;
 }
@@ -53,6 +53,10 @@ a {
 @media(max-width:439px) {
     .main {
         margin-top: 5%;
+    }
+
+    .text-center h5 {   
+        font-size: small;
     }
 
     .p {

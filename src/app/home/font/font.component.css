@@ -26,7 +26,7 @@ p {
 .body {
   background-image: url('/assets/images/Map_back.png');
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: cover;
   backdrop-filter: blur(7px);
   background-attachment: fixed;
 }
@@ -258,6 +258,7 @@ input {
   font-size: 4em;
   font-weight: 600;
   background: linear-gradient(to right, #fd8c29, #ffd533, #0a789c, #ffd533, #0a789c);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
