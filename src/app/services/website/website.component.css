@@ -58,6 +58,7 @@ h1 {
 h1:hover {
     text-decoration: underline #fd8c29;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .img {

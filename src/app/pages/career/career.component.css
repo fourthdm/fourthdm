@@ -167,3 +167,11 @@ i {
 h3 {
     color: black;
 }
+
+img-comparison-slider {
+    cursor: pointer;
+}
+
+.container:hover {
+    cursor: pointer;
+}

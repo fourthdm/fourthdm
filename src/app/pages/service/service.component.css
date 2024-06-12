@@ -132,7 +132,11 @@ img {
     /* animation: flip 4s 1; */
 }
 
-.serviceimg{
+.container:hover {
+    cursor: pointer;
+}
+
+.serviceimg {
     height: 90%;
     width: 80%;
 }

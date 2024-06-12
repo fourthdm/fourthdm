@@ -69,7 +69,7 @@ h4 {
 .C:hover {
   background-color: #0a5b99a1;
   color: white;
-
+  cursor: pointer;
 }
 
 .p {
@@ -145,6 +145,7 @@ h4 {
 
 .cardtext:hover {
   background-color: #fd8c2975;
+  cursor: pointer;
 }
 
 input {

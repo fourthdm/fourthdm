@@ -1,12 +1,12 @@
-.body{
-    background-image: url('/assets/images/Map_back.png'); 
+.body {
+    background-image: url('/assets/images/Map_back.png');
     background-repeat: no-repeat;
-    background-size:150%;
+    background-size: 150%;
     backdrop-filter: blur(7px);
     background-attachment: fixed;
-  } 
+}
 
-.main{
+.main {
     background-image: url('/assets/video/Back2.gif');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -15,13 +15,13 @@
     margin-top: 0%;
 }
 
-@media(max-width:400px){
-    .main{
+@media(max-width:400px) {
+    .main {
         margin-top: 8%;
     }
 }
 
-.div{
+.div {
     padding: 10%;
     padding-top: 5%;
     font-weight: 500;
@@ -29,37 +29,46 @@
 }
 
 
-p{
-margin-top: 10%;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
- font-size: 70PX;
- font-weight: 900;
- animation:horizontal 15s  infinite ;
- /* animation-delay: 1s; */
+p {
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70PX;
+    font-weight: 900;
+    animation: horizontal 15s infinite;
+    /* animation-delay: 1s; */
 }
 
-@keyframes horizontal{
-    from{
-        transform:translateX(-200px);
+@keyframes horizontal {
+    from {
+        transform: translateX(-200px);
     }
-    to{
+
+    to {
         transform: translateX(50px);
     }
 }
-a{
+
+a {
     color: white;
 }
 
-@media(max-width:400px){
-    p{
+@media(max-width:439px) {
+    p {
         font-size: 30px;
         margin-top: 25%;
         animation: horizontal 15s infinite;
     }
-    h6{
+
+    h6 {
         color: #0a5b99;
     }
-    a{
+
+    a {
         color: #0a5b99;
     }
+}
+
+video {
+    border: 3px solid #ffa719;
+    border-bottom-right-radius: 7%;
 }

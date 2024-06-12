@@ -66,6 +66,7 @@ ul,li,b{
 h1:hover{
     text-decoration: underline #fd8c29;
     transform: scale(1.1);
+    cursor: pointer;
 }
 .row{
    margin-top: 5%;
